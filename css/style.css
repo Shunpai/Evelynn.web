@@ -1,7 +1,4 @@
-/* ===== CYBERPUNK EVELYNN THEME ===== */
-
 :root {
-  /* Cyberpunk Color Palette - Inspired by Evelynn's aesthetic */
   --primary-purple: #8B46FF;
   --primary-pink: #FF3D71;
   --secondary-purple: #6D28D9;
@@ -9,7 +6,6 @@
   --accent-cyan: #06B6D4;
   --accent-gold: #F59E0B;
   
-  /* Dark Theme Base */
   --bg-primary: #0A0A0F;
   --bg-secondary: #1A1A2E;
   --bg-tertiary: #16213E;

@@ -1,10 +1,5 @@
-// Evelynn Bot Website JavaScript
-// Professional interactive features and animations
-
 document.addEventListener('DOMContentLoaded', function() {
     console.log('🎉 Evelynn Bot Website Loaded');
-    
-    // Initialize all features
     initNavigation();
     initCounterAnimations();
     initTabSwitching();
@@ -13,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initInteractiveElements();
 });
 
-// Navigation functionality
 function initNavigation() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
