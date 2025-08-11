@@ -21,9 +21,16 @@
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#features" class="nav-link">Features</a></li>
                 <li><a href="#commands" class="nav-link">Commands</a></li>
+                <li><a href="#playground" class="nav-link">Playground</a></li>
                 <li><a href="#stats" class="nav-link">Stats</a></li>
                 <li><a href="https://discord.com/oauth2/authorize?client_id=824527346932908032&permissions=8&scope=bot%20applications.commands" target="_blank" class="nav-link cta-button">Add to Server</a></li>
             </ul>
+            <div class="nav-extras">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun theme-icon light-icon"></i>
+                    <i class="fas fa-moon theme-icon dark-icon"></i>
+                </button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -36,10 +43,6 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">
-                        <span class="badge-text">🚀 Now Live</span>
-                        <div class="badge-glow"></div>
-                    </div>
                     <h1 class="hero-title">
                         Meet <span class="gradient-text">Evelynn</span><br>
                         <span class="cyber-text">Your Cyberpunk Discord Companion</span>
@@ -199,6 +202,20 @@
             <div class="section-header">
                 <h2 class="section-title">Command Categories</h2>
                 <p class="section-subtitle">45+ powerful commands organized into 8 categories for easy discovery</p>
+                
+                <div class="command-search-container">
+                    <div class="search-input-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="commandSearch" class="command-search-input" placeholder="Search commands... (e.g. 'music', 'ban', 'economy')">
+                        <button id="clearSearch" class="clear-search-btn" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="search-stats" id="searchStats" style="display: none;">
+                        <span class="results-count">0 commands found</span>
+                        <span class="category-info"></span>
+                    </div>
+                </div>
             </div>
 
             <div class="commands-tabs">
@@ -455,6 +472,306 @@
                             <div class="command-desc">Get random JoJo characters, Stands, or quotes</div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="playground" class="command-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See Evelynn in Action</h2>
+                <p class="section-subtitle">Witness some examples of Evelynn's commands</p>
+            </div>
+
+            <div class="discord-demos-grid">
+                <!-- Left Column -->
+                <div class="discord-demo" id="discord-demo-0">
+                    <div class="demo-header">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Help System</span>
+                    </div>
+                    <div class="discord-chat">
+                        <!-- User Message -->
+                        <div class="discord-message user-msg">
+                            <div class="message-avatar">
+                                <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="User">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">You</span>
+                                    <span class="timestamp">Today at 12:00 PM</span>
+                                </div>
+                                <div class="message-text">
+                                    <span class="typing-command" id="command-0"></span>
+                                    <span class="command-cursor">|</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Bot Response -->
+                        <div class="discord-message bot-msg" id="bot-response-0" style="display: none;">
+                            <div class="message-avatar">
+                                <img src="images/evelynn-avatar.png" alt="Evelynn Bot">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">Evelynn Bot</span>
+                                    <span class="bot-badge">BOT</span>
+                                    <span class="timestamp">Today at 12:00 PM</span>
+                                </div>
+                                <div class="discord-embed" id="embed-0">
+                                    <div class="embed-sidebar"></div>
+                                    <div class="embed-content">
+                                        <div class="embed-title" id="embed-title-0"></div>
+                                        <div class="embed-description" id="embed-desc-0"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discord-demo" id="discord-demo-1">
+                    <div class="demo-header">
+                        <i class="fas fa-coins"></i>
+                        <span>Economy</span>
+                    </div>
+                    <div class="discord-chat">
+                        <div class="discord-message user-msg">
+                            <div class="message-avatar">
+                                <img src="https://cdn.discordapp.com/embed/avatars/1.png" alt="User">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">You</span>
+                                    <span class="timestamp">Today at 12:01 PM</span>
+                                </div>
+                                <div class="message-text">
+                                    <span class="typing-command" id="command-1"></span>
+                                    <span class="command-cursor">|</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="discord-message bot-msg" id="bot-response-1" style="display: none;">
+                            <div class="message-avatar">
+                                <img src="images/evelynn-avatar.png" alt="Evelynn Bot">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">Evelynn Bot</span>
+                                    <span class="bot-badge">BOT</span>
+                                    <span class="timestamp">Today at 12:01 PM</span>
+                                </div>
+                                <div class="discord-embed" id="embed-1">
+                                    <div class="embed-sidebar"></div>
+                                    <div class="embed-content">
+                                        <div class="embed-title" id="embed-title-1"></div>
+                                        <div class="embed-description" id="embed-desc-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discord-demo" id="discord-demo-2">
+                    <div class="demo-header">
+                        <i class="fas fa-music"></i>
+                        <span>Music Player</span>
+                    </div>
+                    <div class="discord-chat">
+                        <div class="discord-message user-msg">
+                            <div class="message-avatar">
+                                <img src="https://cdn.discordapp.com/embed/avatars/2.png" alt="User">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">You</span>
+                                    <span class="timestamp">Today at 12:02 PM</span>
+                                </div>
+                                <div class="message-text">
+                                    <span class="typing-command" id="command-2"></span>
+                                    <span class="command-cursor">|</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="discord-message bot-msg" id="bot-response-2" style="display: none;">
+                            <div class="message-avatar">
+                                <img src="images/evelynn-avatar.png" alt="Evelynn Bot">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">Evelynn Bot</span>
+                                    <span class="bot-badge">BOT</span>
+                                    <span class="timestamp">Today at 12:02 PM</span>
+                                </div>
+                                <div class="discord-embed" id="embed-2">
+                                    <div class="embed-sidebar"></div>
+                                    <div class="embed-content">
+                                        <div class="embed-title" id="embed-title-2"></div>
+                                        <div class="embed-description" id="embed-desc-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="discord-demo" id="discord-demo-3">
+                    <div class="demo-header">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Games</span>
+                    </div>
+                    <div class="discord-chat">
+                        <div class="discord-message user-msg">
+                            <div class="message-avatar">
+                                <img src="https://cdn.discordapp.com/embed/avatars/3.png" alt="User">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">You</span>
+                                    <span class="timestamp">Today at 12:03 PM</span>
+                                </div>
+                                <div class="message-text">
+                                    <span class="typing-command" id="command-3"></span>
+                                    <span class="command-cursor">|</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="discord-message bot-msg" id="bot-response-3" style="display: none;">
+                            <div class="message-avatar">
+                                <img src="images/evelynn-avatar.png" alt="Evelynn Bot">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">Evelynn Bot</span>
+                                    <span class="bot-badge">BOT</span>
+                                    <span class="timestamp">Today at 12:03 PM</span>
+                                </div>
+                                <div class="discord-embed" id="embed-3">
+                                    <div class="embed-sidebar"></div>
+                                    <div class="embed-content">
+                                        <div class="embed-title" id="embed-title-3"></div>
+                                        <div class="embed-description" id="embed-desc-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discord-demo" id="discord-demo-4">
+                    <div class="demo-header">
+                        <i class="fas fa-palette"></i>
+                        <span>AI Art (DALL-E 3)</span>
+                    </div>
+                    <div class="discord-chat">
+                        <div class="discord-message user-msg">
+                            <div class="message-avatar">
+                                <img src="https://cdn.discordapp.com/embed/avatars/4.png" alt="User">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">You</span>
+                                    <span class="timestamp">Today at 12:04 PM</span>
+                                </div>
+                                <div class="message-text">
+                                    <span class="typing-command" id="command-4"></span>
+                                    <span class="command-cursor">|</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="discord-message bot-msg" id="bot-response-4" style="display: none;">
+                            <div class="message-avatar">
+                                <img src="images/evelynn-avatar.png" alt="Evelynn Bot">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">Evelynn Bot</span>
+                                    <span class="bot-badge">BOT</span>
+                                    <span class="timestamp">Today at 12:04 PM</span>
+                                </div>
+                                <div class="discord-embed" id="embed-4">
+                                    <div class="embed-sidebar"></div>
+                                    <div class="embed-content">
+                                        <div class="embed-title" id="embed-title-4"></div>
+                                        <div class="embed-description" id="embed-desc-4"></div>
+                                        <div class="embed-image" id="embed-image-4" style="display: none;">
+                                            <img src="images/cyberpunk_city.jpg" alt="Generated Cyberpunk City Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discord-demo" id="discord-demo-5">
+                    <div class="demo-header">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Support</span>
+                    </div>
+                    <div class="discord-chat">
+                        <div class="discord-message user-msg">
+                            <div class="message-avatar">
+                                <img src="https://cdn.discordapp.com/embed/avatars/5.png" alt="User">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">You</span>
+                                    <span class="timestamp">Today at 12:05 PM</span>
+                                </div>
+                                <div class="message-text">
+                                    <span class="typing-command" id="command-5"></span>
+                                    <span class="command-cursor">|</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="discord-message bot-msg" id="bot-response-5" style="display: none;">
+                            <div class="message-avatar">
+                                <img src="images/evelynn-avatar.png" alt="Evelynn Bot">
+                            </div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">Evelynn Bot</span>
+                                    <span class="bot-badge">BOT</span>
+                                    <span class="timestamp">Today at 12:05 PM</span>
+                                </div>
+                                <div class="discord-embed" id="embed-5">
+                                    <div class="embed-sidebar"></div>
+                                    <div class="embed-content">
+                                        <div class="embed-title" id="embed-title-5"></div>
+                                        <div class="embed-description" id="embed-desc-5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase-features">
+                <div class="feature-highlight">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Lightning Fast</h4>
+                    <p>Average response time under 100ms</p>
+                </div>
+                <div class="feature-highlight">
+                    <div class="feature-icon">🎯</div>
+                    <h4>45+ Commands</h4>
+                    <p>Comprehensive bot functionality</p>
+                </div>
+                <div class="feature-highlight">
+                    <div class="feature-icon">🚀</div>
+                    <h4>Always Online</h4>
+                    <p>99.9% uptime guarantee</p>
                 </div>
             </div>
         </div>
