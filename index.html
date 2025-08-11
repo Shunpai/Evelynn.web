@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evelynn Bot - Your Cyberpunk Discord Companion</title>
+    <meta name="description" content="Evelynn Bot - A feature-rich Discord bot with music, moderation, economy, and more. Transform your server with cyberpunk style!">
+    <link rel="icon" type="image/png" href="images/bot_avatar.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/evelynn-avatar.png" alt="Evelynn Bot" class="logo-img">
+                <span class="logo-text">Evelynn</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#commands" class="nav-link">Commands</a></li>
+                <li><a href="#stats" class="nav-link">Stats</a></li>
+                <li><a href="https://discord.com/oauth2/authorize?client_id=824527346932908032&permissions=8&scope=bot%20applications.commands" target="_blank" class="nav-link cta-button">Add to Server</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-text">🚀 Now Live</span>
+                        <div class="badge-glow"></div>
+                    </div>
+                    <h1 class="hero-title">
+                        Meet <span class="gradient-text">Evelynn</span><br>
+                        <span class="cyber-text">Your Cyberpunk Discord Companion</span>
+                    </h1>
+                    <p class="hero-description">
+                        Transform your Discord server with advanced moderation, premium music, comprehensive economy, 
+                        and 35+ powerful commands. Built for the future of Discord communities.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://discord.com/oauth2/authorize?client_id=824527346932908032&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-discord"></i>
+                            <span>Add to Discord</span>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <i class="fas fa-rocket"></i>
+                            <span>Explore Features</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">⚡</div>
+                            <span class="stat-number" data-target="35">0</span>
+                            <span class="stat-label">Commands</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <span class="stat-number" data-target="99">0</span>
+                            <span class="stat-label">% Uptime</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">💜</div>
+                            <span class="stat-number" data-target="24">0</span>
+                            <span class="stat-label">7 Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="bot-showcase">
+                        <div class="master-float-container">
+                            <div class="avatar-container">
+                                <img src="images/evelynn-avatar.png" alt="Evelynn Bot" class="bot-avatar">
+                                <div class="avatar-ring"></div>
+                                <div class="avatar-glow"></div>
+                                <div class="status-indicator online">
+                                    <span class="status-text">Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-features">
+                            <div class="feature-orb music" style="--delay: 0s">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="feature-orb moderation" style="--delay: 0.5s">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-orb economy" style="--delay: 1s">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="feature-orb tickets" style="--delay: 1.5s">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+                            <div class="feature-orb fun" style="--delay: 2s">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-animation"></div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need to manage and entertain your Discord community</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card music-player-card" data-aos="fade-up">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Premium Music Player</h3>
+                    <p>High-quality music streaming with advanced queue management, volume control, and multi-source support. Play from YouTube, SoundCloud, and more!</p>
+                    <div class="music-controls">
+                        <img src="images/buttons.png" alt="Music Controls" class="music-buttons">
+                    </div>
+                    <div class="feature-tags">
+                        <span class="tag">Queue System</span>
+                        <span class="tag">Multi-Source</span>
+                        <span class="tag">HD Audio</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Advanced Anti-Spam</h3>
+                    <p>AI-powered spam detection with server-specific settings, smart whitelisting, and comprehensive analytics. Keep your server clean and safe.</p>
+                    <div class="feature-tags">
+                        <span class="tag">AI Detection</span>
+                        <span class="tag">Auto-Moderation</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">💰</div>
+                    <h3>Complete Economy System</h3>
+                    <p>Engaging economy with banking, gambling, shopping, and interactive games. Includes blackjack where card counting is allowed!</p>
+                    <div class="feature-tags">
+                        <span class="tag">Banking</span>
+                        <span class="tag">Gambling</span>
+                        <span class="tag">Shopping</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🎫</div>
+                    <h3>Professional Tickets</h3>
+                    <p>Complete support ticket system with categories, status tracking, assignment management, and interactive controls for seamless support.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Categories</span>
+                        <span class="tag">Assignments</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">📊</div>
+                    <h3>Smart Logging</h3>
+                    <p>Comprehensive logging system with customizable categories, automatic rotation, and detailed audit trails for all server activities.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Auto-Rotation</span>
+                        <span class="tag">Categories</span>
+                        <span class="tag">Audit Trail</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Smart Reminders</h3>
+                    <p>Timezone-aware reminder system with recurring options and interactive management. Never miss important events again!</p>
+                    <div class="feature-tags">
+                        <span class="tag">Timezone-Aware</span>
+                        <span class="tag">Recurring</span>
+                        <span class="tag">Interactive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Command Categories</h2>
+                <p class="section-subtitle">35+ powerful commands organized for easy discovery</p>
+            </div>
+
+            <div class="commands-tabs">
+                <button class="tab-button active" data-tab="moderation">
+                    <i class="fas fa-shield-alt"></i>
+                    Moderation
+                </button>
+                <button class="tab-button" data-tab="music">
+                    <i class="fas fa-music"></i>
+                    Music
+                </button>
+                <button class="tab-button" data-tab="economy">
+                    <i class="fas fa-coins"></i>
+                    Economy
+                </button>
+                <button class="tab-button" data-tab="fun">
+                    <i class="fas fa-gamepad"></i>
+                    Entertainment
+                </button>
+                <button class="tab-button" data-tab="utility">
+                    <i class="fas fa-tools"></i>
+                    Utility
+                </button>
+            </div>
+
+            <div class="commands-content">
+                <div class="tab-content active" id="moderation">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/spamconfig</div>
+                            <div class="command-desc">Configure anti-spam settings with advanced AI detection</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/modactions</div>
+                            <div class="command-desc">Integrated moderation with timeout, ban, and score tracking</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/purge</div>
+                            <div class="command-desc">Bulk delete messages with user filtering and safety checks</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/logs</div>
+                            <div class="command-desc">Advanced logging system with categories and analytics</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="music">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/play</div>
+                            <div class="command-desc">Play music from YouTube, SoundCloud, and more sources</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/queue</div>
+                            <div class="command-desc">Advanced queue management with interactive controls</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/volume</div>
+                            <div class="command-desc">Precise volume control with fade effects</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/lyrics</div>
+                            <div class="command-desc">Display song lyrics with synchronized playback</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="economy">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/eco balance</div>
+                            <div class="command-desc">Check wallet and bank balance with detailed breakdown</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/eco blackjack</div>
+                            <div class="command-desc">Professional blackjack where card counting is allowed!</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/eco shop</div>
+                            <div class="command-desc">Browse marketplace with interactive shopping experience</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/leaderboard</div>
+                            <div class="command-desc">Server rankings with multiple categories and statistics</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="fun">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/jojo</div>
+                            <div class="command-desc">JoJo's Bizarre Adventure database with quiz games</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/loltrivia</div>
+                            <div class="command-desc">League of Legends trivia with scoring and leaderboards</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/uma</div>
+                            <div class="command-desc">Uma Musume horse girls database and interactive games</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/imagegen</div>
+                            <div class="command-desc">AI image generation from text descriptions</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="utility">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/links</div>
+                            <div class="command-desc">Personal cross-server clipboard with organization</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/remind</div>
+                            <div class="command-desc">Timezone-aware reminders with recurring options</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/tools</div>
+                            <div class="command-desc">Text manipulation and admin utilities collection</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/ping</div>
+                            <div class="command-desc">Comprehensive performance dashboard and diagnostics</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="zoom-in">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number counter" data-target="99.9">0</div>
+                    <div class="stat-label">% Uptime</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-number counter" data-target="0.1">0</div>
+                    <div class="stat-label">s Response Time</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">🛡️</div>
+                    <div class="stat-number counter" data-target="100">0</div>
+                    <div class="stat-label">% Error-Free</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">🔧</div>
+                    <div class="stat-number counter" data-target="35">0</div>
+                    <div class="stat-label">+ Commands</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invite Section -->
+    <section id="invite" class="invite">
+        <div class="container">
+            <div class="invite-content">
+                <h2 class="invite-title">Ready to Transform Your Server?</h2>
+                <p class="invite-description">
+                    Join thousands of servers already using Evelynn Bot for professional Discord management.
+                    Setup takes less than 2 minutes with our guided onboarding process.
+                </p>
+                <div class="invite-buttons">
+                    <a href="https://discord.com/oauth2/authorize?client_id=824527346932908032&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fab fa-discord"></i>
+                        Add Evelynn to Discord
+                    </a>
+                    <a href="https://github.com/YourUsername/Evelynn_js" target="_blank" class="btn btn-secondary btn-large">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+                <div class="invite-features">
+                    <div class="invite-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Free Forever</span>
+                    </div>
+                    <div class="invite-feature">
+                        <i class="fas fa-check"></i>
+                        <span>No Premium Paywall</span>
+                    </div>
+                    <div class="invite-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Open Source</span>
+                    </div>
+                    <div class="invite-feature">
+                        <i class="fas fa-check"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/bot_avatar.png" alt="Evelynn Bot" class="footer-logo-img">
+                        <span class="footer-logo-text">Evelynn Bot</span>
+                    </div>
+                    <p class="footer-description">
+                        The most advanced Discord bot for community management, entertainment, and moderation.
+                        Built with reliability and performance in mind.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#commands">Commands</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Discord Server</a></li>
+                            <li><a href="#">GitHub Issues</a></li>
+                            <li><a href="#">Status Page</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">License</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Evelynn Bot. Made with ❤️ for Discord communities.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+    </script>
+</body>
+</html>
