@@ -2,8 +2,8 @@
 
 A professional, modern website for the **Evelynn Discord Bot** featuring interactive elements, cyberpunk aesthetics, and responsive design.
 
-🌐 **Live Site:** [https://yourusername.github.io/Evelynn.web](https://yourusername.github.io/Evelynn.web)  
-🤖 **Bot Repository:** [Evelynn_js](https://github.com/YourUsername/Evelynn_js)  
+🌐 **Live Site:** [https://shunpai.github.io/Evelynn.web](https://shunpai.github.io/Evelynn.web)  
+🤖 **Bot Repository:** [Evelynn_js](https://github.com/Shunpai/Evelynn_js)  
 ➕ **Add Bot to Discord:** [Invite Link](https://discord.com/oauth2/authorize?client_id=824527346932908032&permissions=8&scope=bot%20applications.commands)
 
 ## 🌟 Features
