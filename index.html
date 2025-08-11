@@ -46,7 +46,7 @@
                     </h1>
                     <p class="hero-description">
                         Transform your Discord server with advanced moderation, premium music, comprehensive economy, 
-                        and 35+ powerful commands. Built for the future of Discord communities.
+                        and 45+ powerful commands across 8 categories. Built for the future of Discord communities.
                     </p>
                     <div class="hero-buttons">
                         <a href="https://discord.com/oauth2/authorize?client_id=824527346932908032&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn btn-primary">
@@ -62,7 +62,7 @@
                     <div class="hero-stats">
                         <div class="stat-card">
                             <div class="stat-icon">⚡</div>
-                            <span class="stat-number" data-target="35">0</span>
+                            <span class="stat-number" data-target="45">0</span>
                             <span class="stat-label">Commands</span>
                         </div>
                         <div class="stat-card">
@@ -198,76 +198,100 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Command Categories</h2>
-                <p class="section-subtitle">35+ powerful commands organized for easy discovery</p>
+                <p class="section-subtitle">45+ powerful commands organized into 8 categories for easy discovery</p>
             </div>
 
             <div class="commands-tabs">
-                <button class="tab-button active" data-tab="moderation">
+                <button class="tab-button active" data-tab="system">
+                    <i class="fas fa-cog"></i>
+                    System
+                </button>
+                <button class="tab-button" data-tab="moderation">
                     <i class="fas fa-shield-alt"></i>
                     Moderation
                 </button>
-                <button class="tab-button" data-tab="music">
-                    <i class="fas fa-music"></i>
-                    Music
-                </button>
-                <button class="tab-button" data-tab="economy">
-                    <i class="fas fa-coins"></i>
-                    Economy
-                </button>
-                <button class="tab-button" data-tab="fun">
+                <button class="tab-button" data-tab="entertainment">
                     <i class="fas fa-gamepad"></i>
                     Entertainment
+                </button>
+                <button class="tab-button" data-tab="media">
+                    <i class="fas fa-music"></i>
+                    Media
                 </button>
                 <button class="tab-button" data-tab="utility">
                     <i class="fas fa-tools"></i>
                     Utility
                 </button>
+                <button class="tab-button" data-tab="notifications">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </button>
+                <button class="tab-button" data-tab="tickets">
+                    <i class="fas fa-ticket-alt"></i>
+                    Tickets
+                </button>
+                <button class="tab-button" data-tab="anime">
+                    <i class="fas fa-star"></i>
+                    Anime
+                </button>
             </div>
 
             <div class="commands-content">
-                <div class="tab-content active" id="moderation">
+                <div class="tab-content active" id="system">
                     <div class="commands-grid">
                         <div class="command-card">
-                            <div class="command-name">/spamconfig</div>
-                            <div class="command-desc">Configure anti-spam settings with advanced AI detection</div>
+                            <div class="command-name">/help</div>
+                            <div class="command-desc">Display comprehensive help menu with all available commands</div>
                         </div>
                         <div class="command-card">
-                            <div class="command-name">/modactions</div>
-                            <div class="command-desc">Integrated moderation with timeout, ban, and score tracking</div>
+                            <div class="command-name">/ping</div>
+                            <div class="command-desc">Bot performance dashboard with latency, uptime, and system diagnostics</div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="moderation">
+                    <div class="commands-grid">
                         <div class="command-card">
                             <div class="command-name">/purge</div>
-                            <div class="command-desc">Bulk delete messages with user filtering and safety checks</div>
+                            <div class="command-desc">Bulk delete 1-100 messages with optional user targeting</div>
                         </div>
                         <div class="command-card">
-                            <div class="command-name">/logs</div>
+                            <div class="command-name">/modactions timeout</div>
+                            <div class="command-desc">Timeout users with spam score tracking</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/modactions quickban</div>
+                            <div class="command-desc">Ban users with automatic spam logging</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/modactions inspect</div>
+                            <div class="command-desc">User analysis with moderation recommendations</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/spamconfig</div>
+                            <div class="command-desc">Configure anti-spam protection with AI detection and scam blocking</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/spamscore</div>
+                            <div class="command-desc">Check user spam scores and history</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/spamstats</div>
+                            <div class="command-desc">Server spam analytics and reports</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/logs setup</div>
                             <div class="command-desc">Advanced logging system with categories and analytics</div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="tab-content" id="music">
-                    <div class="commands-grid">
                         <div class="command-card">
-                            <div class="command-name">/play</div>
-                            <div class="command-desc">Play music from YouTube, SoundCloud, and more sources</div>
-                        </div>
-                        <div class="command-card">
-                            <div class="command-name">/queue</div>
-                            <div class="command-desc">Advanced queue management with interactive controls</div>
-                        </div>
-                        <div class="command-card">
-                            <div class="command-name">/volume</div>
-                            <div class="command-desc">Precise volume control with fade effects</div>
-                        </div>
-                        <div class="command-card">
-                            <div class="command-name">/lyrics</div>
-                            <div class="command-desc">Display song lyrics with synchronized playback</div>
+                            <div class="command-name">/clearchathistory</div>
+                            <div class="command-desc">Clear AI conversation history for current channel</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-content" id="economy">
+                <div class="tab-content" id="entertainment">
                     <div class="commands-grid">
                         <div class="command-card">
                             <div class="command-name">/eco balance</div>
@@ -282,29 +306,41 @@
                             <div class="command-desc">Browse marketplace with interactive shopping experience</div>
                         </div>
                         <div class="command-card">
-                            <div class="command-name">/leaderboard</div>
-                            <div class="command-desc">Server rankings with multiple categories and statistics</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-content" id="fun">
-                    <div class="commands-grid">
-                        <div class="command-card">
-                            <div class="command-name">/jojo</div>
-                            <div class="command-desc">JoJo's Bizarre Adventure database with quiz games</div>
+                            <div class="command-name">/eco beg</div>
+                            <div class="command-desc">Earn coins from begging with cooldown system</div>
                         </div>
                         <div class="command-card">
                             <div class="command-name">/loltrivia</div>
                             <div class="command-desc">League of Legends trivia with scoring and leaderboards</div>
                         </div>
                         <div class="command-card">
-                            <div class="command-name">/uma</div>
-                            <div class="command-desc">Uma Musume horse girls database and interactive games</div>
+                            <div class="command-name">/leaderboard</div>
+                            <div class="command-desc">Server rankings with multiple categories and statistics</div>
                         </div>
                         <div class="command-card">
-                            <div class="command-name">/imagegen</div>
-                            <div class="command-desc">AI image generation from text descriptions</div>
+                            <div class="command-name">/customs</div>
+                            <div class="command-desc">Set up ranked League of Legends custom lobbies with LP rewards</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="media">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/play</div>
+                            <div class="command-desc">Advanced music system with queue management and multi-source support</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/voice_say</div>
+                            <div class="command-desc">Generate and play AI speech in voice channels</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/evepaint</div>
+                            <div class="command-desc">Create AI-generated images from text descriptions</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/watch</div>
+                            <div class="command-desc">Find movies, TV shows, and discover where to stream them</div>
                         </div>
                     </div>
                 </div>
@@ -313,19 +349,110 @@
                     <div class="commands-grid">
                         <div class="command-card">
                             <div class="command-name">/links</div>
-                            <div class="command-desc">Personal cross-server clipboard with organization</div>
-                        </div>
-                        <div class="command-card">
-                            <div class="command-name">/remind</div>
-                            <div class="command-desc">Timezone-aware reminders with recurring options</div>
+                            <div class="command-desc">Personal cross-server clipboard with organization and statistics</div>
                         </div>
                         <div class="command-card">
                             <div class="command-name">/tools</div>
-                            <div class="command-desc">Text manipulation and admin utilities collection</div>
+                            <div class="command-desc">Text manipulation utilities and admin tools</div>
                         </div>
                         <div class="command-card">
-                            <div class="command-name">/ping</div>
-                            <div class="command-desc">Comprehensive performance dashboard and diagnostics</div>
+                            <div class="command-name">/remind</div>
+                            <div class="command-desc">Set timezone-aware reminders with recurring options</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/reminders</div>
+                            <div class="command-desc">View, delete, and share active reminders</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/settimezone</div>
+                            <div class="command-desc">Configure your timezone for accurate reminder scheduling</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="notifications">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/addtwitchdata</div>
+                            <div class="command-desc">Add Twitch stream notifications to a channel</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/removetwitchdata</div>
+                            <div class="command-desc">Remove Twitch stream monitoring</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/youtube add</div>
+                            <div class="command-desc">Monitor YouTube uploads with automatic channel validation</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/youtube remove</div>
+                            <div class="command-desc">Stop monitoring YouTube channel uploads</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tickets">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/tickets setup</div>
+                            <div class="command-desc">Initialize ticket categories and permissions</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/tickets createbooth</div>
+                            <div class="command-desc">Create interactive ticket booth for users</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/tickets list</div>
+                            <div class="command-desc">View tickets with status indicators and filtering</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/tickets close</div>
+                            <div class="command-desc">Close specific tickets with reason logging</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/tickets stats</div>
+                            <div class="command-desc">Server ticket overview and analytics</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/ticketadmin cleanup</div>
+                            <div class="command-desc">Remove old tickets and channels with bulk operations</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="anime">
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-name">/uma random</div>
+                            <div class="command-desc">Discover a random Uma Musume horse girl</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/uma character</div>
+                            <div class="command-desc">Get detailed Uma Musume character information</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/uma gallery</div>
+                            <div class="command-desc">View Uma Musume character artwork and media</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/uma quiz</div>
+                            <div class="command-desc">Horse girl guessing game with scoring</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/jojo character</div>
+                            <div class="command-desc">Detailed JoJo character info including abilities and Stand</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/jojo stand</div>
+                            <div class="command-desc">Complete Stand profiles with stats and abilities</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/jojo quiz</div>
+                            <div class="command-desc">Test your JoJo knowledge with trivia questions</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/jojo random</div>
+                            <div class="command-desc">Get random JoJo characters, Stands, or quotes</div>
                         </div>
                     </div>
                 </div>
@@ -353,7 +480,7 @@
                 </div>
                 <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="stat-icon">🔧</div>
-                    <div class="stat-number counter" data-target="35">0</div>
+                    <div class="stat-number counter" data-target="45">0</div>
                     <div class="stat-label">+ Commands</div>
                 </div>
             </div>
