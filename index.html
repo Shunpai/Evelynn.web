@@ -49,7 +49,7 @@
                     </h1>
                     <p class="hero-description">
                         Transform your Discord server with advanced moderation, premium music, comprehensive economy, 
-                        and 45+ powerful commands across 8 categories. Built for the future of Discord communities.
+                        and 60+ powerful commands across 8 categories. Built for the future of Discord communities.
                     </p>
                     <div class="hero-buttons">
                         <a href="https://discord.com/oauth2/authorize?client_id=824527346932908032&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn btn-primary">
@@ -65,7 +65,7 @@
                     <div class="hero-stats">
                         <div class="stat-card">
                             <div class="stat-icon">⚡</div>
-                            <span class="stat-number" data-target="45">0</span>
+                            <span class="stat-number" data-target="60">0</span>
                             <span class="stat-label">Commands</span>
                         </div>
                         <div class="stat-card">
@@ -201,7 +201,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Command Categories</h2>
-                <p class="section-subtitle">45+ powerful commands organized into 8 categories for easy discovery</p>
+                <p class="section-subtitle">60+ powerful commands organized into 8 categories for easy discovery</p>
                 
                 <div class="command-search-container">
                     <div class="search-input-wrapper">
@@ -258,11 +258,31 @@
                     <div class="commands-grid">
                         <div class="command-card">
                             <div class="command-name">/help</div>
-                            <div class="command-desc">See all my commands and what they do!</div>
+                            <div class="command-desc">Display this help menu with all available commands</div>
                         </div>
                         <div class="command-card">
                             <div class="command-name">/ping</div>
-                            <div class="command-desc">Comprehensive bot performance and system information</div>
+                            <div class="command-desc">Comprehensive bot performance dashboard with latency, uptime, and system diagnostics</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/imageprocessor removebackground</div>
+                            <div class="command-desc">AI-powered background removal with smart edge detection</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/imageprocessor convert</div>
+                            <div class="command-desc">Convert between 10+ formats (PNG, JPEG, WebP, AVIF, HEIF, TIFF, ICO, JXL, Raw)</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/imageprocessor createicon</div>
+                            <div class="command-desc">Generate multiple icon sizes with presets</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/imageprocessor addeffects</div>
+                            <div class="command-desc">Apply filters and effects (grayscale, sepia, blur, sharpen, vintage)</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/imageprocessor addwatermark</div>
+                            <div class="command-desc">Add smart-resizing text watermarks with positioning control</div>
                         </div>
                     </div>
                 </div>
@@ -304,6 +324,30 @@
                         <div class="command-card">
                             <div class="command-name">/clearchathistory</div>
                             <div class="command-desc">Clear AI conversation history for current channel</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/setpersonality</div>
+                            <div class="command-desc">Customize Evelynn's AI personality for your server (Admin)</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/viewpersonality</div>
+                            <div class="command-desc">View the current AI personality settings</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/enable_evelynn</div>
+                            <div class="command-desc">Enable AI chat in a channel (Admin)</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/disable_evelynn</div>
+                            <div class="command-desc">Disable AI chat for this server (Admin)</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/stockdashboard setup</div>
+                            <div class="command-desc">Create live market chart dashboard in channel (Admin)</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/stockdashboard remove</div>
+                            <div class="command-desc">Remove dashboard from channel (Admin)</div>
                         </div>
                     </div>
                 </div>
@@ -382,6 +426,22 @@
                             <div class="command-name">/customs</div>
                             <div class="command-desc">Set up ranked League of Legends custom lobbies with LP rewards</div>
                         </div>
+                        <div class="command-card">
+                            <div class="command-name">/eco stocks</div>
+                            <div class="command-desc">View live stock market prices (updates every 10 minutes)</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/eco buystock</div>
+                            <div class="command-desc">Purchase stocks via dropdown menu</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/eco sellstock</div>
+                            <div class="command-desc">Sell your holdings with profit/loss display</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/eco portfolio</div>
+                            <div class="command-desc">View your investments with real-time values</div>
+                        </div>
                     </div>
                 </div>
 
@@ -418,15 +478,27 @@
                         </div>
                         <div class="command-card">
                             <div class="command-name">/remind</div>
-                            <div class="command-desc">Set a reminder for yourself</div>
+                            <div class="command-desc">Set timezone-aware reminders with recurring options</div>
                         </div>
                         <div class="command-card">
                             <div class="command-name">/reminders</div>
-                            <div class="command-desc">View, delete, and share active reminders</div>
+                            <div class="command-desc">View, delete, and share active reminders with interactive interface</div>
                         </div>
                         <div class="command-card">
                             <div class="command-name">/settimezone</div>
                             <div class="command-desc">Configure your timezone for accurate reminder scheduling</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/notes create</div>
+                            <div class="command-desc">Create beautiful parchment-style notes with visual pages</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/notes view</div>
+                            <div class="command-desc">Browse your global notes with interactive navigation</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/watch</div>
+                            <div class="command-desc">Find movies and TV shows with streaming information</div>
                         </div>
                     </div>
                 </div>
@@ -498,6 +570,26 @@
                         <div class="command-card">
                             <div class="command-name">/uma quiz</div>
                             <div class="command-desc">Horse girl guessing game with scoring</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/umarace setup</div>
+                            <div class="command-desc">Initialize racing system and create required role (Admin)</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/umarace customs</div>
+                            <div class="command-desc">Start Uma Musume race lobby with 18-gate system and Potra Points</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/umarace points</div>
+                            <div class="command-desc">Check your or another user's Potra Points balance</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/umarace leaderboard</div>
+                            <div class="command-desc">View server Potra Points rankings with pagination</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/umarace reset</div>
+                            <div class="command-desc">Reset all server Potra Points data (Admin only)</div>
                         </div>
                         <div class="command-card">
                             <div class="command-name">/jojo character</div>
@@ -809,7 +901,7 @@
                 </div>
                 <div class="feature-highlight">
                     <div class="feature-icon">🎯</div>
-                    <h4>45+ Commands</h4>
+                    <h4>60+ Commands</h4>
                     <p>Comprehensive bot functionality</p>
                 </div>
                 <div class="feature-highlight">
@@ -841,7 +933,7 @@
                 </div>
                 <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="stat-icon">🔧</div>
-                    <div class="stat-number counter" data-target="45">0</div>
+                    <div class="stat-number counter" data-target="60">0</div>
                     <div class="stat-label">+ Commands</div>
                 </div>
             </div>
